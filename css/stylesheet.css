@@ -1,0 +1,92 @@
+html,
+body {
+	/*this is to remove any default web brower settings for the margin,padding*/
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.intro {
+	/*this is for the image to cover the entire sceen the image is also added using the backgroung proterty*/
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background: url(http://getwallpapers.com/wallpaper/full/d/d/7/997331-hitman-wallpaper-hd-1920x1080-picture.jpg) no-repeat 50% 50%;
+	background-color: black;
+	display: table;
+	top: 0;
+	background-size: cover;
+}
+
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+
+.content {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1 {
+	font-family: Arial, San-serif;
+	color: #f9f3f4;
+	text-transform: uppercase;
+	font-size: 400%;
+}
+
+h6 {
+	font-family: Arial, San-serif;
+	color: #f9f3f4;
+	font-style: italic;
+	-webkit-animation-delay: 2s;
+	-webkit-animation-duration: 0.3s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.btn {
+	border-radius: 9px;
+	font-family: Arial, San-serif;
+	color: white;
+	background: none;
+	font-size: 135%;
+	padding: 10px 20px;
+	border: solid 3px;
+	text-transform: uppercase;
+	transition: .8s;
+
+
+}
+
+
+.btn:hover {
+	color: #B22222;
+	border: solid #ff0000 3px;
+	box-shadow: 0 0 20px #ff0000;
+}
+
+@media screen and (max-width: 768px) {
+
+	/*this makes the page responsive when it reaches 768px*/
+	.content h1 {
+		font-size: 250%;
+	}
+
+	.content h6 {
+		font-size: 100%;
+	}
+
+	.btn {
+		font-size: 100%;
+		padding: 5px 10px;
+	}
+}
+
+.img {
+	width: 200px;
+	margin: 0 0 10px;
+}

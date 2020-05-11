@@ -1,0 +1,54 @@
+.card {
+  /*this is used for the the cards look like the backgroung color and the height*/
+  background-color: lightgrey;
+  border-bottom: 5px solid grey;
+  height: auto;
+}
+
+.container {
+  padding-top: 100px;
+
+}
+
+.theBtn {
+  background-color: rgba(196, 143, 13, 0.7);
+  border: none;
+}
+
+.theBtn:hover {
+  background-color: white;
+  color: rgba(196, 143, 13, 0.7);
+  transform: scale(1.1);
+  border: none;
+}
+
+.myBtn {
+  background-color: rgb(120, 178, 185);
+  border: none;
+}
+
+.btn:focus {
+  outline: 0px;
+}
+
+
+.myBtn:hover {
+  background-color: white;
+  color: rgb(120, 178, 185);
+  transform: scale(1.1);
+  border: none;
+}
+
+figure img:hover {
+  /*this is to change the image to expand and the filter is applied  when it is hovered over*/
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+tr {
+  text-align: center;
+}
+
+summary:focus {
+  outline: 0;
+}

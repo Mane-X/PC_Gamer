@@ -1,0 +1,145 @@
+body {
+    background-color: black;
+    color: rgb(255, 255, 255);
+
+}
+
+.title {
+    padding-top: 100px;
+}
+
+.contentItems {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#calculateDelivery {
+    margin-top: 10px;
+}
+
+#myCoupon {
+    margin-top: 10px;
+}
+
+#selection2,
+.selection {
+    padding: 5px 0px;
+    border-radius: 6px;
+
+}
+
+#selection2,
+.selection:focus {
+    outline: none;
+}
+
+input {
+    border-radius: 6px;
+    border: solid gray 1px;
+    padding: 10px 0;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+}
+
+
+img {
+    width: 100px;
+    height: auto;
+}
+
+ion-icon {
+    font-size: 25px;
+}
+
+.myForm {
+    padding-top: 10px;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
+.container2 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px;
+    color: azure;
+    background-color: rgb(78, 75, 75);
+    border: none;
+    width: auto;
+    border-radius: 20px;
+
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    color: rgb(78, 75, 75);
+    background-color: white;
+}
+
+.dropDownMenu {
+    padding-top: 10px;
+    margin-bottom: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+button {
+    width: 300px;
+    height: 50px;
+    font-size: 24px;
+    background-color: rgb(78, 75, 75);
+    color: floralwhite;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+button:focus {
+    outline: none;
+}
+
+.dropDownMenu table {
+
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    transform-origin: top;
+    transform: perspective(1000px) rotateX(-90deg);
+    transition: 0.5s;
+}
+
+table.active {
+    transform: perspective(1000px) rotateX(0deg);
+}
+
+.dropDownMenu th {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background: rgb(78, 75, 75);
+    color: floralwhite;
+    border-bottom: 1px solid white;
+}
+
+.dropDownMenu td {
+    text-align: center;
+}

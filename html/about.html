@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>About</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/about.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			background-image: url(http://getwallpapers.com/wallpaper/full/b/6/0/370851.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-attachment: fixed;
+		}
+	</style>
+	<!--i used a internal style sheet to make a responsive background image-->
+</head>
+
+<body>
+	<header class="header">
+		<!--this a navigation bar the logo is an image and the na is responsive-->
+		<a href="../index.html" class="logo"><img src="../images/logo.png" alt="website logo"></a>
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+		<ul class="menu">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="shipping.html">Shipping</a></li>
+			<<li><a href="cart.html" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span
+						id="itemsInCart">0</span></a></li>
+				<li><a href="login.html"><span><i class="fa fa-user-circle" aria-hidden="true"></i> Login</span></a>
+				</li>
+		</ul>
+	</header>
+	<div class="about-section">
+		<!--this is the about section with css the about is at the top
+			of the page-->
+		<h1>About Us</h1>
+		<p>We are an online store that sells video games to the customers but most importantly we specialize with pc
+			gaming hence our products are for pc gamers.<br>We realized that PC gamers need their own store dedicated
+			for them to purchase products.<br>The store Founder is a pc gamer himself so he knows the in and outs about
+			pc gaming and certainly problems that come with pc games.<br>That's why our store also provides pc game
+			troubleshooting free of charge. So you are in very good hands.</p>
+	</div>
+
+	<h2 class="heading">Testimonials</h2>
+	<!--this is testimonial and the width of all pictures is set at 
+			a width of 90px look  at the css file for the img settings-->
+	<div class="container">
+		<img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+			alt="person smiling" style="width:90px">
+		<p>Jamie Fox<br><small class="text-muted">Customer</small></p>
+		<p>I ordered a product from Pc gamers 3 months ago. I used their premium delivery plan. I was extremely happy
+			with the service as my product since arrived within 6 days. I’ve been using the video game since then and
+			haven’t experienced any issues. I highly recommend PC gamers</p>
+	</div>
+
+	<div class="container">
+		<img src="https://2.bp.blogspot.com/-xy8Zs1MSSPY/UVX4eFHzlOI/AAAAAAAAAzA/P4JQzMB6zPg/s1600/steve+urkel.jpg"
+			alt="happy person" style="width:90px">
+		<p>Thando Ncgobo<br><small class="text-muted">Customer</small></p>
+		<p>I ordered from PC gamers a couple of weeks ago but sadly my product arrived damaged due to negligent handling
+			by the courier service. I contacted PC gamer and they acted immediately received my new product within 2
+			days . Their customer service is extremely commendable. </p>
+	</div>
+	<h2 class="heading">Sponsors</h2>
+
+	<div class="container">
+		<h5>Activision</h5>
+		<!--this is the floating box which is responsive-->
+		<p>Activision Publishing, Inc. is an American video game publisher based in Santa Monica, California.<br><a
+				href="https://www.activision.com/" class="link">Visit</a></p>
+	</div>
+	<div class="container">
+		<h5>Sega</h5>
+		<p>Sega Corporation is a Japanese multinational video game developer and publisher. <br><a
+				href="https://www.sega.com/" class="link">Visit</a></p>
+	</div>
+	<div class="container">
+		<h5>Konami</h5>
+		<p>Konami Holdings Corporation is a Japanese entertainment and gambling conglomerate. <br><a
+				href="https://www.konami.com/en/" class="link">Visit</a></p>
+	</div>
+	<script src="../js/cart.js"></script>
+</body>
+
+</html>

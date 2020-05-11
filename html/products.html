@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Products</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!--this a bootsrap link-->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/product.css">
+	<style>
+		body {
+			background-image: url(http://getwallpapers.com/wallpaper/full/b/6/0/370851.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-attachment: fixed;
+			background-color: rgb(248, 123, 34);
+		}
+	</style>
+	<!--i used a internal sytlesheet to make a responsive backgraound image-->
+</head>
+
+<body>
+	<header class="header">
+		<a href="../index.html" class="logo"><img src="../images/logo.png" alt="website logo"></a>
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+		<ul class="menu">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="shipping.html">Shipping</a></li>
+			<li><a href="cart.html" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span
+						id="itemsInCart">0</span></a></li>
+			<li><a href="login.html"><span><i class="fa fa-user-circle" aria-hidden="true"></i> Login</span></a></li>
+		</ul>
+	</header>
+	<div class="container">
+		<div class="row">
+			<!--this is to show that i am using bootsrap the card deck class makes all the information contained inside have the card deck layout-->
+			<div class="col-sm-4">
+				<div class="card">
+					<figure>
+						<img class="img-responsive card-img-top img-thumbnail img-fluid max-width:100%; height: auto;"
+							src="https://wallpapercave.com/wp/wp5398449.jpg" alt="headphones"></figure>
+					<!--Bootstrap provides the .img-thumbnail class to easily display an image with a
+					rounded 1px border appearance.-->
+					<!--thie class atrributes that have been placed for the image for the image make the image responsive to the window changes like when someone vies it on a phone or laptop or when resizing the browser-->
+					<div class="card-body">
+						<h5 class="card-title">COD Advanced Warfare</h5>
+						<details>
+							<summary>more details</summary>
+							<p>Call of Duty: Advanced Warfare is a 2014 first-person shooter video game published by
+								Activision. The eleventh major installment in the Call of Duty series.</p>
+							<p class="card-text"><small class="text-muted">PEGI 18LV</small></p>
+						</details>
+						<a href="#" class="btn theBtn" onclick="cartPrice()">Add To Cart</a>
+						<a href="cart.html" class="btn myBtn">CheckOut</a>
+						<!--this creates a button with the text purchase-->
+						<p class="card-text"><small class="text-muted">In Stock</small></p>
+						<p class="card-text"><small class="text-muted">R699.99</small></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card">
+					<!--this creats a card for me using bootstrap-->
+					<figure><img class="card-img-top img-thumbnail img-fluid max-width:100%; height: auto;"
+							src="https://wallpapercave.com/wp/wp3279279.jpg" alt="Scarlett Audio Interface"></figure>
+					<!--thie class atrributes that have been placed for the image for the image make the image responsive to the window changes like when someone vies it on a phone or laptop or when resizing the browser-->
+					<div class="card-body">
+						<h5 class="card-title">Far Cry 5</h5>
+						<!--this creates a text space for the information about the product on the webpage-->
+						<details>
+							<summary>more details</summary>
+							<p>Far Cry 5 is a 2018 first-person shooter game developed by Ubisoft Montreal and Ubisoft
+								Toronto and published by Ubisoft. It is the standalone successor to the 2014's Far Cry
+								4, and the fifth main installment in the Far Cry series.</p>
+							<p class="card-text"><small class="text-muted">PEGI 18LV</small></p>
+						</details>
+						<a href="#" class="btn theBtn">Add To Cart</a>
+						<a href="cart.html" class="btn myBtn">CheckOut</a>
+						<p class="card-text"><small class="text-muted">In Stock</small></p>
+						<p class="card-text"><small class="text-muted">R899.99</small></p>
+						<!--this gives text at the bottom of the card that is muted-->
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="card">
+					<!--this creats a card for me using bootstrap-->
+					<figure><img class="card-img-top img-thumbnail img-fluid max-width:100%; height: auto;"
+							src="https://wallpapercave.com/wp/wp5075232.jpg" alt="Scarlett Audio Interface"></figure>
+					<!--thie class atrributes that have been placed for the image for the image make the image responsive to the window changes like when someone vies it on a phone or laptop or when resizing the browser-->
+					<div class="card-body">
+						<h5 class="card-title">Far Cry New Dawn</h5>
+						<!--this creates a text space for the information about the product on the webpage-->
+						<details>
+							<summary>more details</summary>
+							<p>Far Cry New Dawn is a 2019 first-person shooter developed by Ubisoft Montreal and
+								published by Ubisoft. The game is a spin-off of the Far Cry series and a narrative
+								sequel to Far Cry 5.</p>
+							<p class="card-text"><small class="text-muted">PEGI 18LV</small></p>
+						</details>
+						<a href="#" class="btn theBtn">Add To Cart</a>
+						<a href="cart.html" class="btn myBtn">CheckOut</a>
+						<p class="card-text"><small class="text-muted">In Stock</small></p>
+						<p class="card-text"><small class="text-muted">R1299.99</small></p>
+
+						<!--this gives text at the bottom of the card that is muted-->
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card">
+					<!--this creats a card for me using bootstrap-->
+					<figure><img class="card-img-top img-thumbnail img-fluid max-width:100%; height: auto;"
+							src="https://wallpapercave.com/wp/wp1811846.jpg" alt="Scarlett Audio Interface"></figure>
+					<!--thie class atrributes that have been placed for the image for the image make the image responsive to the window changes like when someone vies it on a phone or laptop or when resizing the browser-->
+					<div class="card-body">
+						<h5 class="card-title">Grand Theft Auto V</h5>
+						<!--this creates a text space for the information about the product on the webpage-->
+						<details>
+							<summary>more details</summary>
+							<p>Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and
+								published by Rockstar Games. It is the first main entry in the Grand Theft Auto series
+								since 2008's Grand Theft Auto IV</p>
+							<p class="card-text"><small class="text-muted">PEGI 18LVN</small></p>
+						</details>
+						<a href="#" class="btn theBtn">Add To Cart</a>
+						<a href="cart.html" class="btn myBtn">CheckOut</a>
+						<p class="card-text"><small class="text-muted">In Stock</small></p>
+						<p class="card-text"><small class="text-muted">R859.99</small></p>
+
+						<!--this gives text at the bottom of the card that is muted-->
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card">
+					<!--this creats a card for me using bootstrap-->
+					<figure><img class="card-img-top img-thumbnail img-fluid max-width:100%; height: auto;"
+							src="https://wallpapercave.com/wp/wp4601537.jpg" alt="need for speed"></figure>
+					<!--thie class atrributes that have been placed for the image for the image make the image responsive to the window changes like when someone vies it on a phone or laptop or when resizing the browser-->
+					<div class="card-body">
+						<h5 class="card-title">Need For Speed Heat</h5>
+						<!--this creates a text space for the information about the product on the webpage-->
+						<details>
+							<summary>more details</summary>
+							<p>Need for Speed Heat is a racing video game developed by Ghost Games and published by
+								Electronic Arts for Microsoft Windows, PlayStation 4 and Xbox One. It is the
+								twenty-fourth installment in the Need for Speed series and commemorates the series' 25th
+								anniversary. It was released on November 8, 2019.</p>
+							<p class="card-text"><small class="text-muted">PEGI 18</small></p>
+						</details>
+						<a href="#" class="btn theBtn">Add To Cart</a>
+						<a href="cart.html" class="btn myBtn">CheckOut</a>
+						<p class="card-text"><small class="text-muted">In Stock</small></p>
+						<p class="card-text"><small class="text-muted">R859.99</small></p>
+
+
+						<!--this gives text at the bottom of the card that is muted-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="../js/cart.js"></script>
+</body>
+
+</html>

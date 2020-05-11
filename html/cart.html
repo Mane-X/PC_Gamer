@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/cart.css">
+
+	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+	<title>Cart</title>
+</head>
+
+<body>
+	<header class="header">
+		<!--this a navigation bar the logo is an image and the na is responsive-->
+		<a href="../index.html" class="logo"><img src="../images/logo.png" alt="website logo"></a>
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+		<ul class="menu">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="shipping.html">Shipping</a></li>
+			<li><a href="cart.html" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span
+						id="itemsInCart">0</span></a></li>
+			<li><a href="login.html"><span id="span"><i class="fa fa-user-circle" aria-hidden="true"></i>
+						Login</span></a></li>
+
+		</ul>
+	</header>
+	<div class="productContainer table-1 table-responsive table">
+		<h1 class="title">Your Cart</h1>
+		<table class="contentItems">
+			<tr class="tableHead">
+				<th scope="col" class="productTitles">Product</th>
+				<th scope="col" class="price">Price</th>
+				<th scope="col" class="quanity">Quantity</th>
+				<th scope="col" class="total">Total</th>
+			</tr>
+			<tbody class="products">
+
+			</tbody>
+		</table>
+
+	</div>
+
+	<div class="myForm">
+		<label for="coupons">Coupons</label> <br>
+		<input placeholder="0000" id="input" type="text">
+		<br>
+		<label>Choose a Method</label>
+		<br>
+		<select class="selection" id="selection">
+			<option>Delivery</option>
+			<option>Collection</option>
+		</select>
+		<br>
+		<label id="head6">Delivery Method</label>
+		<br>
+		<select id="selection2">
+			<option></option>Choose a method</option>
+			<option>Basic</option>
+			<option>Standard</option>
+			<option>Premium</option>
+		</select>
+		<br><br>
+		<a href="#" class="btn" id="myCoupon">Add Coupon To Total</a>
+		<a href="#" class="btn button2" id="calculateDelivery"> Add Delivery Method To Total</a>
+		<br>
+		<div class="container2">
+
+
+
+		</div>
+		<a href="#" class="btn" onclick="confirmOrder()">Confirm Order</a>
+	</div>
+	<div class="dropDownMenu">
+		<button class="hoverBtn">Delivery Prices</button>
+		<table id="tableHover">
+			<tr>
+				<th>Basic</th>
+				<th>Standard</th>
+				<th>Premium</th>
+			</tr>
+			<tr>
+				<td>R50</td>
+				<td>R150</td>
+				<td>R250</td>
+			</tr>
+		</table>
+
+	</div>
+
+
+	<script src="../js/cart.js"></script>
+	<script src="../js/animation.js"></script>
+</body>
+
+</html>

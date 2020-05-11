@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+a {
+  color: white;
+}
+
+#span {
+  color: red;
+}
+
+#span:hover {
+  opacity: 70%;
+  font-style: italic;
+}
+
+#cart:hover {
+  color: rgb(98, 28, 155);
+  font-style: italic;
+}
+
+/* header */
+
+.header {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: black;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  color: grey;
+  font-style: italic;
+}
+
+.header .logo {
+  display: block;
+  color: white;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.logo:hover {
+  opacity: 65%;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .nav-icon:before {
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked~.menu {
+  /*this is the max height when the menu btn is checked(drop down)*/
+  max-height: 500px;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:before {
+  /*this is when someone clicks on the hamburger it rotates at -45 degrees to formm an X to 
+  close the menu*/
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:after {
+  /*this is when someone clicks on the hamburger it rotates at -45 degrees to formm an X to 
+  close the menu*/
+  transform: rotate(45deg);
+  top: 0;
+}
+
+
+/* 48em = 768px @ 16pt font */
+
+@media (min-width: 61em) {
+  /*this is where the nav bar is made to be responsive when it reaches 58em it collapses 
+  into a hamburger drop down nav bar*/
+
+  .header li {
+    float: left;
+  }
+
+  .header li a {
+    padding: 20px 30px;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+.logo img {
+  height: 30px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}

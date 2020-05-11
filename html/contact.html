@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Products</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/contact.css">
+	<link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			background-image: url(http://getwallpapers.com/wallpaper/full/d/d/7/997331-hitman-wallpaper-hd-1920x1080-picture.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-attachment: fixed;
+		}
+	</style>
+	<!--i used a internal sytlesheet to make a responsive backgraound image-->
+</head>
+
+<body>
+	<header class="header">
+		<a href="../index.html" class="logo"><img src="../images/logo.png" alt="website logo"></a>
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+		<ul class="menu">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="shipping.html">Shipping</a></li>
+			<li><a href="cart.html" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span
+						id="itemsInCart">0</span></a></li>
+			<li><a href="login.html"><span><i class="fa fa-user-circle" aria-hidden="true"></i> Login</span></a></li>
+		</ul>
+	</header>
+	<!-- contact section -->
+	<section id="contact-section">
+		<div class="container">
+			<h2>Contact Us</h2>
+			<p>Email us and keep upto date with our latest news</p>
+			<div class="contact-form">
+				<!-- First grid -->
+				<div>
+					<p class="form-info"> 16 Knob Bush Pretoria Wall ave</p><br>
+					<p class="form-info">Phone: 011 0479 348</p><br>
+					<p class="form-info"><a href="support@pcgaming.co.za">support@pcgaming.co.za</a></p>
+				</div>
+
+				<!-- second grid -->
+				<div>
+					<form>
+						<input type="text" placeholder="Your Name" required>
+						<input type="text" placeholder="Last Name"><br>
+						<input type="Email" placeholder="Email" required><br>
+						<input type="text" placeholder="Subject of this message"><br>
+						<textarea name="message" placeholder="Message" rows="5" required></textarea><br>
+						<button class="submit">Send Message</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="../js/cart.js"></script>
+</body>
+
+</html>
